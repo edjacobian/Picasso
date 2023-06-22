@@ -1,0 +1,69 @@
+body {
+  background-color: darkgray;
+}
+
+.flexgrid > div {
+  background-color: lime;
+  font-size: 30;
+  margin: 10;
+  width: 180;
+  font-weight: 350;
+  text-decoration-line: underline;
+
+}
+
+.flexgrid2 > div {
+  background-color: rebeccapurple;
+  font-size: 80;
+  text-align: center;
+  margin: 10;
+  width: 100%;;
+  height: 200px;
+  padding-top: 220px;
+  font-weight: 350;
+  text-decoration-line: underline;
+
+}
+
+.one {
+  color: blue;
+  z-index: 10;
+}
+
+.two {
+  color: crimson;
+  z-index: 20;
+}
+
+.three {
+  color: lightsalmon;
+  z-index: 30;
+}
+
+.four {
+  color: aquamarine;
+  z-index: 40;
+}
+
+.flexgrid {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  border: 15px solid black;
+  flex-direction: row;
+}
+
+@media (max-width: 320px) {
+  .flexgrid {
+    flex-direction: column;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .flexgrid {
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 5px dotted black;
+  }
+}
